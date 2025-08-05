@@ -134,7 +134,7 @@ export default function Home() {
 
     try {
       // You can replace this URL with your actual API endpoint
-      const response = await fetch('mail.alfbatz.com', {
+      const response = await fetch('https://mail.alfbatz.com/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
