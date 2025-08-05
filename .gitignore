@@ -1,0 +1,7 @@
+.DS_Store
+/node_modules/
+/public/
+# React Router
+/.react-router/
+/build/
+/build.zip
