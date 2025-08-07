@@ -3,10 +3,63 @@ import { useState, useRef, useEffect } from 'react';
 
 export function meta() {
   return [
-    { title: "ALF BATZ - From Silence to Symphony" },
-    { name: "description", content: "Crafting iconic soundtracks for film, TV and games through music that speaks beyond words." },
+    { title: "Professional Music Composer for Games &amp; Films | Freelance &amp; Custom Scores" },
+    { name: "description", content: "Experienced music composer for video games, films, and TV. Offering custom compositions, original soundtracks, and immersive audio design. Hire a composer today!" },
   ];
 }
+
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": ": Do Soundtrack Composers Provide Custom Music For Video Games?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Composing new music for video games is one of the chief services of some of the best soundtrack composers. They are given the task to make the audio-immersive for the maturing of the game’s mechanics and story. Impressive game soundtracks contain original compositions that grow with the game-play, helping the player hooked on their game journey. From ambient background tracks to action-driven themes, music captivates the audience on a whole new level of participation."
+    }
+  },{
+    "@type": "Question",
+    "name": "Can I Have A Cinematic Score For My Short Film And Or A Web Series?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes! That’s one of the main things I offer. The best soundtrack composers can render a soundtrack or a cinematic score exactly fitting the pacing, mood, and theme of the project, be it a feature-length film, short film, or web series. Such music scores are intended to enhance visual storytelling and allow for a deeper bond to be created with the audience. Orchestration, electronic elements, or even a mixture of both are among the instruments employed for hallmarking the effect desired."
+    }
+  },{
+    "@type": "Question",
+    "name": "Do You Make High-Quality Music For TV Commercials And Product Ads?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Certainly! I guarantee high-quality music for any medium, films, TV, ads, etc. Soundtrack composers who are in the highest echelon very often help marketing campaigns where they use music to represent the brand identity and responsiveness, and emotion as desired. Developing music for commercials and product launches dependent on jingles, ambiance, or mood can greatly impact viewer retention levels, inducing engagement."
+    }
+  },{
+    "@type": "Question",
+    "name": "What Sort Of Music Services Can I Expect From Leading Soundtrack Composers?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Original scoring, sound design, mixing and mastering, and audio editing are some of the services I provide.These services are primarily useful for those in the field of film, gaming, advertising, and digital media. The best composers are in a position to provide professional-grade audio solutions tuned to the specific needs of the project, be it a dramatic orchestral score or a minimalist ambient track."
+    }
+  },{
+    "@type": "Question",
+    "name": "What types of projects has Alf Batz worked on? How can I hire them for my next project?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Alf Batz has composed music for feature films, short films, web series, commercials, and games, producing diverse pieces that cement his position as Tennessee's top soundtrack composer. Please feel free to email alfbatz@gmail.com or fill out the contact form on the site regarding your project. Alf is offering customized scoring services for your vision."
+    }
+  }]
+};
+
+
+const SchemaMarkup = () => (
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+  />
+);
+
+
+
 
 export default function Home() {
   // Music player state
@@ -157,6 +210,8 @@ export default function Home() {
   };
 
   return (
+    <>
+    <SchemaMarkup />
     <div className="min-h-screen bg-transparent">
       {/* Hidden audio element */}
       <audio ref={audioRef} preload="metadata" />
@@ -1124,5 +1179,6 @@ export default function Home() {
         </div>
       </section>
     </div>
+    </>
   );
 }

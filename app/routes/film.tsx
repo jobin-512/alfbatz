@@ -1,5 +1,64 @@
 import { useState } from 'react';
 
+export function meta() {
+    return [
+      { title: "Top Film and TV Music Composer | Best Movie Soundtrack & Film Scores" },
+      { name: "description", content: "Looking for a skilled film music composer? Get professional music composition for films, TV, and soundtracks. Expert in orchestral scores and movie music production" },
+      { name: "keywords", content: "best film music composers, music composition for films, best film score composers, best movie soundtrack composers, top movie music composers, tv music composer, music production for film, movie score composers, orchestral music for films, best movie soundtrack composers, film soundtrack composers" },
+    ];
+  }
+
+
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "Who are the Alf Batz Games composers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We work with seasoned experts, such as a TV music composer, the best film score composers, and the best movie soundtrack composers. Each artist brings years of experience in music composition for films, giving our games a cinematic touch."
+      }
+    },{
+      "@type": "Question",
+      "name": "Are your soundtracks original?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. All our game music is 100% original, crafted by top movie music composers, best film score composers, and experts in music production for film. Every track is composed to elevate gameplay and storytelling."
+      }
+    },{
+      "@type": "Question",
+      "name": "Do your games feature orchestral music?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Many titles include breathtaking orchestral music for films that enhance immersion. Some of the best film music composers renowned for writing stirring, emotionally impactful compositions are on our team."
+      }
+    },{
+      "@type": "Question",
+      "name": "Are the composers recognized in the film industry?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most of our composers have worked alongside the best movie soundtrack composers, collaborating with legends in the world of cinema. Their background in music composition for films ensures every piece is top-tier."
+      }
+    },{
+      "@type": "Question",
+      "name": "Can I purchase or stream your game soundtracks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Definitely. Some tracks by our best movie soundtrack composers and film soundtrack composers are available on major streaming platforms. Dive in and discover why our music rivals even the best movie soundtrack composers in the industry."
+      }
+    }]
+  };
+  
+  
+  const SchemaMarkup = () => (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+    />
+  );
+
+
 export default function Film() {
     const [openFAQ, setOpenFAQ] = useState(0);
     
@@ -8,6 +67,8 @@ export default function Film() {
     };
 
     return (
+        <>
+        <SchemaMarkup />
         <div className="min-h-screen bg-transparent flex flex-col items-center justify-center py-20 px-4">
             {/* Main Title */}
             <div className="text-center mb-16">
@@ -869,5 +930,6 @@ export default function Film() {
                 </div>
             </section>
         </div>
+        </>
     );
 }

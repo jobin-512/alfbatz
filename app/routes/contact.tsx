@@ -1,5 +1,12 @@
 import { useState } from 'react';
 
+export function meta() {
+  return [
+    { title: " Alf Batz – Contact a Professional Music Composer | Get in Touch" },
+    { name: "description", content: "Get in touch with Alf Batz for film, TV, and game music composition. Contact via phone or email to discuss your project and music needs." },
+  ];
+}
+
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',

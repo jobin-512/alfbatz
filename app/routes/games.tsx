@@ -1,5 +1,62 @@
 import { useState } from 'react';
 
+export function meta() {
+  return [
+    { title: "Best Video Game Music Composer | Game Sound Designer" },
+    { name: "description", content: "Looking for the right music for your project? I compose original soundtracks for video games and films, blending creativity with high-quality sound design." },
+    { name: "keywords", content: "music composition for games, video game music composer, video game music designer, video game music composer needed, video game music composition, video game audio design, video game sound designer, best video game music composers, video game music composer for hire" },
+  ];
+}
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "What is a music composition for games?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The video game music composition is the creation of genuine music compositions that are purposely developed to match a game's style, mood and genre. This is the job of a professional video game music composer. A video game composer is a necessary facet of an engaging and memorable video game music composition for games that enhances user experience and gameplay."
+    }
+  },{
+    "@type": "Question",
+    "name": "In what ways can I discover if I need a composer for my project in a video game?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "If your video game requires a specific custom sonic identity, a soundtrack to stimulate emotion in the game, then yes, you will need a video game music composer. A skilled video game sound designer will customize the game in such a way that all the details are taken care of in terms of the music fitting to the game narrative and tempo, developing your project that shines."
+    }
+  },{
+    "@type": "Question",
+    "name": "Is a video game music composer available to hire at Alf Batz?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes! At Alf Batz, you’ll find the perfect Video game music composer for hire. Our platform connects you with experienced professionals who specialize in music composition for games, video game audio design, and complete video game music composition services. Work with a top-tier video game music composer today!"
+    }
+  },{
+    "@type": "Question",
+    "name": "What’s the difference between a music designer and a sound designer?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A video game music designer is concerned solely with composing and arranging the music for a game and ensuring that the music matches the intent of all of the game’s gameplay aspects. A video game sound designer is concerned with creating all in-game sound effects, ambient noises, and elements of video game audio design. Both the video game music designer and the video game sound designer are equally important for a 3-dimensional form of audio experience."
+    }
+  },{
+    "@type": "Question",
+    "name": "Do you only work with the best video game music composers?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Absolutely. We work with only the best video game music composers in the world. Whether it's just a freelance video game music composer or all of the services for music composition for video games, we work with the best professionals in the world, all with exceptional experience providing video game music composition and video game audio design.Let Alf Batz help you bring your vision to life with expert music composition for games, top-tier video game music composers, and seamless video game audio design that resonates with every player."
+    }
+  }]
+};
+
+const SchemaMarkup = () => (
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+  />
+);
+
+
 export default function Games() {
   // FAQ state for this page
   const [openFAQ, setOpenFAQ] = useState(-1);
@@ -8,6 +65,8 @@ export default function Games() {
   };
 
   return (
+    <>
+      <SchemaMarkup />
     <div className="min-h-screen bg-transparent flex flex-col items-center justify-center py-20 px-4">
       {/* Headline */}
       <div className="text-center mb-16">
@@ -255,5 +314,6 @@ export default function Games() {
         </div>
       </section>
     </div>
+  </>
   );
 }

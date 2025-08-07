@@ -1,5 +1,80 @@
 import { useState, useRef, useEffect } from 'react';
 
+export function meta() {
+  return [
+    { title: "Music Composer USA | Freelance Music Composition Services" },
+    { name: "description", content: "Hire an experienced music composer for original compositions across genres. Get high-quality custom compositions for films, trailers, and electronic music projects." },
+    { name: "keywords", content: "music composer usa, Music Composer For Hire Online, music composer freelance, music composition freelance, original music composition, custom music composition, music composition services, electronic music composer, best trailer music composers" },
+  ];
+}
+
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "What project types do you provide music composition services for? Can I get you to hire?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "At Alf Batz, you will get custom music composition for various media projects, including films, movie trailers, video games, advertisements, and others. Whether a filmmaker, a game designer, or a content creator, I compose to your vision with professional-grade audio and add emotional depth to my music. Moreover, you can hire me. I engage with my clients remotely on an international scale. If you are searching for a music composer for hire online, I am very comfortable working virtually."
+    }
+  },{
+    "@type": "Question",
+    "name": "Do you create original music for trailers or promotional videos?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Absolutely! Composing scores for trailers is one of my favorite types of projects. I use great energy to compose the best television and movie trailer music. It produces some of the most glamorous and dramatic scores that can get anybody's attention and bring out your visuals. Each inkling of the trailer demands a score that creates anticipation and narrates a story well."
+    }
+  },{
+    "@type": "Question",
+    "name": "Can your services be used for music composition freelance projects?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, I provide music composer freelance services that are specific to each project's requirements. Whether you require a short cue or a complete score, my freelance compositions are versatile and designed to support your concept."
+    }
+  },{
+    "@type": "Question",
+    "name": "Do you specialize in any particular style or genre?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Well, I write a lot of different styles, but I have a soft spot for electronic music composition, soundscapes, and hybrids. So if anyone's looking for an electronic music composer who can really complement those digital textures with emotional chords, I'm that person."
+    }
+  },{
+    "@type": "Question",
+    "name": "How do I get started with your music composition services?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Just fill out the contact form on this site or email me, and we will discuss your creative vision, timelines, aspirations, and all that before I provide you with a quote and a starting point for structuring your unique musical score specific to your project."
+    }
+  },{
+    "@type": "Question",
+    "name": "What kind of music styles do you write?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "At Alf Batz, I offer a range of styles including cinematic, ambient, orchestral, and electronic. Being a seasoned electronic music composer, I can merge artificial timbres with organic textures to produce engaging and emotive pieces to order according to your vision."
+    }
+  },{
+    "@type": "Question",
+    "name": "What distinguishes your music composition services?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The reason my music composition services are unique is that I bring together technical proficiency, emotional resonance, and storytelling. I don't merely create tracks—I craft sonic stories that connect with people. Every piece is carefully constructed to accurately capture the mood, pacing, and message of your project."
+    }
+  }]
+}
+
+
+
+const SchemaMarkup = () => (
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+  />
+);
+
+
+
 export default function Music() {
   // Music player state
   const [currentTrack, setCurrentTrack] = useState(0);
@@ -256,6 +331,8 @@ export default function Music() {
   }, [currentTrack]);
 
   return (
+    <>
+    <SchemaMarkup />
     <div className="min-h-screen bg-transparent flex flex-col items-center justify-center py-20 px-4">
       {/* Headline and Subheadline */}
       <div className="text-center mb-12">
@@ -742,5 +819,6 @@ export default function Music() {
         </div>
       </section>
     </div>
+    </>
   );
 }

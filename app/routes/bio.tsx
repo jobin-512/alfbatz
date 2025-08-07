@@ -1,3 +1,12 @@
+
+export function meta() {
+  return [
+    { title: "Alfbatz – Music Producer for Film, TV & Games | Bio" },
+    { name: "description", content: "From Denmark to MTV fame with Paul Di'Anno to film & game scoring—discover Alfbatz's journey as a music producer now focused on Film, TV, and Game music." },
+  ];
+}
+
+
 export default function Bio() {
   return (
     <div
