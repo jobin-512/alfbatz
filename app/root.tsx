@@ -7,8 +7,15 @@ import {
   ScrollRestoration,
 } from "react-router";
 
+import ReactGA from "react-ga4";
 import type { Route } from "./+types/root";
 import "./app.css";
+
+// Initialize GA only in the browser
+if (typeof window !== "undefined") {
+  ReactGA.initialize("G-FL9DVNQQ66");
+  ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+}
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -42,6 +49,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
+  // Send pageview only on client
+  if (typeof window !== "undefined") {
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+  }
+
   return <Outlet />;
 }
 
