@@ -250,9 +250,9 @@ export default function Home() {
           </p>
 
           {/* CTA Button */}
-          <button className="bg-yellow-400 text-black px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-colors duration-300 transform hover:scale-105">
+          <a href="/contact" className="bg-yellow-400 text-black px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-colors duration-300 transform hover:scale-105">
             DISCOVER MORE
-          </button>
+          </a>
         </div>
       </section>
 
@@ -274,9 +274,9 @@ export default function Home() {
                   </p>
                 </div>
                 
-                <button className="bg-transparent text-white border border-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-black transition-all duration-300">
+                <a href="https://www.youtube.com/@alfbatzofficial" className="bg-transparent text-white border border-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-black transition-all duration-300">
                   DISCOVER MORE
-                </button>
+                </a>
               </div>
 
               {/* Right Side - Video Player */}
@@ -337,9 +337,9 @@ export default function Home() {
               </p>
               
               {/* CTA Button */}
-              <button className="bg-transparent text-white border border-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-black transition-all duration-300">
+              <a href="/music" className="bg-transparent text-white border border-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-black transition-all duration-300">
                 DISCOVER MORE
-              </button>
+              </a>
             </div>
             
             {/* Right Content - Images */}
@@ -890,7 +890,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             
             {/* Video 1 - Another Daily Life */}
-            <iframe width="399" height="299" src="https://www.youtube.com/embed/tnU8ZYtXcdU" title="Another Daily Life | Intense Sci-Fi Rescore by Alf Batz – A Futuristic Showdown"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" className='border border-white rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-105 block w-full'></iframe>
+            <iframe width="399" height="299" src="https://www.youtube.com/embed/FelaLOdjxBU" title="Another Daily Life | Intense Sci-Fi Rescore by Alf Batz – A Futuristic Showdown"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" className='border border-white rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-105 block w-full'></iframe>
 
 
             {/* Video 2 - Another Daily Life */}
