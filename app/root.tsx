@@ -17,6 +17,12 @@ if (typeof window !== "undefined") {
   ReactGA.send({ hitType: "pageview", page: window.location.pathname });
 }
 
+export function meta() {
+  return [
+    { name: "google-site-verification", content: "uL1x7HrvWiA-PGX0LV7e46_Exu_AqaP0UBOm1iT7ia4" },
+  ];
+}
+
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
