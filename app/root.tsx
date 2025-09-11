@@ -17,11 +17,6 @@ if (typeof window !== "undefined") {
   ReactGA.send({ hitType: "pageview", page: window.location.pathname });
 }
 
-export function meta() {
-  return [
-    { name: "google-site-verification", content: "uL1x7HrvWiA-PGX0LV7e46_Exu_AqaP0UBOm1iT7ia4" },
-  ];
-}
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -42,6 +37,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="google-site-verification" content="uL1x7HrvWiA-PGX0LV7e46_Exu_AqaP0UBOm1iT7ia4" />
         <Meta />
         <Links />
       </head>
