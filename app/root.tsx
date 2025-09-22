@@ -17,6 +17,32 @@ if (typeof window !== "undefined") {
   ReactGA.send({ hitType: "pageview", page: window.location.pathname });
 }
 
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Alf Batz",
+  "alternateName": "alfbatz",
+  "url": "https://www.alfbatz.com/",
+  "logo": "https://www.alfbatz.com/logo.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1 931-797-8507",
+    "contactType": "customer service",
+    "areaServed": "US",
+    "availableLanguage": "en"
+  },
+  "sameAs": [
+    "https://www.facebook.com/alfbatzofficial/",
+    "https://www.instagram.com/alfbatzofficial/",
+    "https://www.youtube.com/@alfbatzofficial"
+  ]
+}
+
+const SchemaMarkup = () => (
+  <script type="application/ld+json">
+    {JSON.stringify(schemaData)}
+  </script>
+);
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -38,6 +64,26 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="google-site-verification" content="uL1x7HrvWiA-PGX0LV7e46_Exu_AqaP0UBOm1iT7ia4" />
+        <meta name="robots" content="index, follow"/>
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Professional Music Composer for Games & Films | Freelance & Custom Scores" />
+        <meta property="og:image" content="https://www.alfbatz.com/logo.png"/>
+        <meta property="og:description" content="Experienced music composer for video games, films, and TV. Offering custom compositions, original soundtracks, and immersive audio design. Hire a composer today!" />
+        <meta property="og:url" content="https://www.alfbatz.com/" />
+        <meta property="og:site_name" content="alfbatz" /> 
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="alfbatz" />
+        <meta name="twitter:description" content="Experienced music composer for video games, films, and TV. Offering custom compositions, original soundtracks, and immersive audio design. Hire a composer today!" />
+        <meta name="twitter:image" content="https://www.alfbatz.com/logo.png" />
+        <meta name="twitter:creator" content="@alfbatz" />
+        <meta name="twitter:site" content="@alfbatz" />
+        <meta name="twitter:label1" content="Written by"/>
+        <meta name="twitter:data1" content="admin"/>
+        <meta name="twitter:label2" content="Est. reading time"/>
+        <meta name="twitter:data2" content="31 minutes"/>
+        <link rel="canonical" href="https://www.alfbatz.com/" />
+        <SchemaMarkup />
         <Meta />
         <Links />
       </head>
