@@ -248,6 +248,9 @@ export default function Home() {
           <p className="text-lg md:text-xl text-white max-w-4xl mb-8 leading-relaxed">
             A seamless blend of professionalism, experience, and passion—bringing film, TV and games to life through music that speaks beyond words.
           </p>
+          <p className="text-lg md:text-xl text-white max-w-4xl mb-8 leading-relaxed">
+            Whether you need full-scale Film & TV Music Composition or a custom trailer cue from a skilled trailer music composer, your story deserves a score that resonates.
+          </p>
 
           {/* CTA Button */}
           <a href="/contact" className="bg-yellow-400 text-black px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-colors duration-300 transform hover:scale-105">
@@ -273,6 +276,9 @@ export default function Home() {
                     <span className="text-yellow-400">ORIGINAL</span>
                   </p>
                 </div>
+                <p className="text-lg md:text-xl text-white leading-relaxed">
+                  From ambient game worlds to cinematic moments, I’m a passionate game music composer and storyteller through sound.
+                </p>
                 
                 <a href="https://www.youtube.com/@alfbatzofficial" className="bg-transparent text-white border border-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-black transition-all duration-300">
                   DISCOVER MORE
@@ -323,17 +329,20 @@ export default function Home() {
               
               {/* Paragraph 2 */}
               <p className="text-lg leading-relaxed">
-                Whether it's a compelling film, an engaging podcast, a high-impact commercial or a game, my compositions are custom-made to evoke powerful emotions that seamlessly support storytelling.
+                Whether it's a compelling film, an engaging podcast, a high-impact commercial, or a game, my compositions are custom-made to evoke powerful emotions that seamlessly support storytelling.
               </p>
               
               {/* Paragraph 3 */}
               <p className="text-lg leading-relaxed">
-                With expertise in creating original soundtracks, I position myself as one of the best soundtrack composers in the industry. My goal is to craft captivating music that resonates with your audience and leaves a lasting impression.
+                With expertise in creating original soundtracks, I position myself as one of the best soundtrack composers in the industry. My work as a trailer music composer and game music composer allows me to bring dynamic emotional depth across genres.
+              </p>
+              <p className="text-lg leading-relaxed">
+                I proudly offer full-service Film & TV Music Composition under the umbrella of a boutique, high-touch music production company.
               </p>
               
               {/* Closing */}
               <p className="text-2xl font-semibold text-yellow-400">
-                Sincerely Thank You.
+                Sincerely, Thank You.
               </p>
               
               {/* CTA Button */}
@@ -394,6 +403,7 @@ export default function Home() {
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Tailor-made Musical Compositions</h3>
                     <p className="text-gray-300">Each project is unique and deserves a custom soundtrack that aligns with your vision and communicates tone, mood, and narrative.</p>
+                    <p className="text-gray-300">Whether you're producing a film, launching a game, or developing a trailer, I offer expert-level Film & TV Music Composition tailored to your needs.</p>
                   </div>
                 </div>
                 
@@ -410,6 +420,7 @@ export default function Home() {
                   <div>
                     <h3 className="text-xl font-semibold mb-2">High-Quality Production</h3>
                     <p className="text-gray-300">Unbeatable quality in all productions, meeting industry standards with clear, dynamic, and balanced sound from concept to final mix.</p>
+                    <p className="text-gray-300">As a trusted music production company, I oversee every project with meticulous attention to quality and detail.</p>
                   </div>
                 </div>
                 
@@ -551,6 +562,9 @@ export default function Home() {
             <p className="text-lg md:text-xl text-white max-w-4xl mx-auto leading-relaxed">
               Music liberates the human soul by touching the very core of one's heart. Its true impact can be realized in the extensive list of my services that are designed for versatile users. I am open to exploring new dimensions of collaborations that could fit any creative project. Whether you're a filmmaker, content creator, or business owner, I can provide:
             </p>
+            <p className="text-lg md:text-xl text-white max-w-4xl mx-auto leading-relaxed mt-4">
+              As a full-service music production company, I ensure your music stands out—no matter the medium.
+            </p>
           </div>
 
           {/* Services Grid */}
@@ -567,8 +581,9 @@ export default function Home() {
               <div className="p-6 flex flex-col flex-1">
                 <h3 className="text-2xl font-bold text-white mb-4">Music Production</h3>
                 <p className="text-gray-300 text-sm mb-4 leading-relaxed">
-                  Every song or streaming service that you hear in today's world is the result of creative geniuses of music composers who tirelessly spend hours crafting soundscapes that breathe life into a piece of art. I offer comprehensive solutions to cover all your requirements for producing musical compositions that exceeds your expectations.
+                  Every song or streaming service that you hear in today's world is the result of creative geniuses of music composers who tirelessly spend hours crafting soundscapes that breathe life into a piece of art. I offer comprehensive solutions to cover all your requirements for producing musical compositions that exceed your expectations.
                 </p>
+                <p className="text-gray-300 text-sm mb-4 leading-relaxed">As a full-service music production company, I ensure your music stands out—no matter the medium.</p>
                 
                 <div className="mb-6 flex-1">
                   <p className="text-gray-300 text-sm mb-3">My service includes:</p>
@@ -617,6 +632,7 @@ export default function Home() {
                 </p>
                 
                 <div className="mb-6 flex-1">
+                  <p className="text-gray-300 text-sm mb-3">This includes full Film & TV Music Composition services for all visual storytelling formats.</p>
                   <p className="text-gray-300 text-sm mb-3">You can reach me for:</p>
                   <ul className="space-y-1 mb-4">
                     <li className="text-gray-300 text-sm flex items-center">
@@ -703,7 +719,7 @@ export default function Home() {
               <div className="p-6 flex flex-col flex-1">
                 <h3 className="text-2xl font-bold text-white mb-4">Music for Games</h3>
                 <p className="text-gray-300 text-sm mb-4 leading-relaxed">
-                  Captivating soundscapes and scores are essential for creating an immersive video game experience. I create custom soundscapes that complement your game's environment, set the mood, enhance the story, and reinforce realism to motivate replay.
+                  Captivating soundscapes and scores are essential for creating an immersive video game experience. As a dedicated game music composer, I create adaptive scores and cinematic themes that elevate gameplay. I create custom soundscapes that complement your game's environment, set the mood, enhance the story, and reinforce realism to motivate replay.
                 </p>
                 
                 <div className="mb-6 flex-1">
@@ -848,6 +864,10 @@ export default function Home() {
                 If you're searching for a dedicated and talented Tennessee-based music composer who can transform your project with world-class soundtracks, you've come to the right place. I am proud to be recognized among the best soundtrack composers and I am committed to delivering exceptional music that exceeds your expectations within your budget.
               </p>
               
+              <p className="text-lg md:text-xl leading-relaxed">
+                As a professional trailer music composer and film scorer, I deliver standout compositions that captivate and convert.
+              </p>
+
               {/* Second Paragraph */}
               <p className="text-lg md:text-xl leading-relaxed">
                 Whether you need a dramatic film score, an engaging podcast soundtrack, or a powerful commercial jingle, I am here to collaborate and bring your vision to life.
@@ -980,7 +1000,7 @@ export default function Home() {
                 }`}
               >
                 <p className="text-gray-300 text-lg leading-relaxed">
-                  Absolutely! I specialize in creating music that perfectly aligns with your vision, regardless of genre or style. Whether you're looking for a cinematic score, a game soundtrack, or a unique instrumental piece, I can tailor my work to your specific needs.
+                  Absolutely! I specialize in creating music that perfectly aligns with your vision, regardless of genre or style. Whether you're looking for Film & TV Music Composition, a powerful trailer cue, or immersive game music, I tailor my work to your exact needs.
                 </p>
               </div>
             </div>
@@ -1078,7 +1098,7 @@ export default function Home() {
               Get in Touch
             </h2>
             <p className="text-lg md:text-xl text-white max-w-4xl mx-auto leading-relaxed">
-              Have a project in mind? Let's make it a reality. I'd love to hear about your vision and discuss how I can help bring your creative ideas to life.
+              Have a project in mind? Let's make it a reality. I'd love to hear about your vision and discuss how I can help bring your creative ideas to life. Whether you're looking for a music production company to manage your next project or a trailer music composer to bring it home, I’m ready to collaborate.
             </p>
           </div>
 

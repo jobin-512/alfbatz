@@ -6,7 +6,7 @@ import backgroundImage from '/bg.jpg';
 
 export default function Layout() {
     return (
-        <main className='bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `url(${backgroundImage})` }}>
+        <main className='bg-cover bg-center relative bg-no-repeat' style={{ backgroundImage: `url(${backgroundImage})` }}>
             <Header />
             <Outlet />
             <Footer />
