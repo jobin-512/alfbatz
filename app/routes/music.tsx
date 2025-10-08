@@ -2,9 +2,9 @@ import { useState, useRef, useEffect } from 'react';
 
 export function meta() {
   return [
-    { title: "Music Composer USA | Freelance Music Composition Services" },
-    { name: "description", content: "Hire an experienced music composer for original compositions across genres. Get high-quality custom compositions for films, trailers, and electronic music projects." },
-    { name: "keywords", content: "music composer usa, Music Composer For Hire Online, music composer freelance, music composition freelance, original music composition, custom music composition, music composition services, electronic music composer, best trailer music composers" },
+    { title: "Freelance Music Composer USA | Music video production company" },
+    { name: "description", content: "Work with Alfbatz, a freelance music composer in USA, for powerful background scores and trailer music. Expert music video production company for films & ads." },
+    { name: "keywords", content: "freelance music composer in USA, background music composer,trailer music composer, music video production company, music score composer" },
   ];
 }
 

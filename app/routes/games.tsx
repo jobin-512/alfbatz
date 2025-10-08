@@ -2,10 +2,10 @@ import { useState } from 'react';
 
 export function meta() {
   return [
-    { title: "Best Video Game Music Composer | Game Sound Designer" },
-    { name: "description", content: "Looking for the right music for your project? I compose original soundtracks for video games and films, blending creativity with high-quality sound design." },
-    { name: "keywords", content: "music composition for games, video game music composer, video game music designer, video game music composer needed, video game music composition, video game audio design, video game sound designer, best video game music composers, video game music composer for hire" },
-  ];
+    { title: "Game Music Composer | Best Video Game Soundtracks" },
+    { name: "description", content: "Looking for the best video game soundtracks? Alfbatz, an expert game music composer, blends creativity and precision to compose music for video games that inspire." },
+    { name: "keywords", content: "compose music for video games,video game music composer,game soundtrack composer,game music composer,best video game soundtracks,games best soundtrack" },
+];
 }
 
 const schemaData = {

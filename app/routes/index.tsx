@@ -3,8 +3,9 @@ import { useState, useRef, useEffect } from 'react';
 
 export function meta() {
   return [
-    { title: "Professional Music Composer for Games &amp; Films | Freelance &amp; Custom Scores" },
-    { name: "description", content: "Experienced music composer for video games, films, and TV. Offering custom compositions, original soundtracks, and immersive audio design. Hire a composer today!" },
+    { title: "Music Production Company | Cinematic Music ComposerProfessional Music Composer for Games &amp; Films | Freelance &amp; Custom Scores" },
+    { name: "description", content: "Bring your story to life with Alfbatz, a top music production company specializing in cinematic music and film composition. Let’s create powerful soundtracks." },
+    { name: "keywords", content: "music production company,cinematic music,Music Production,music composer film" },
   ];
 }
 

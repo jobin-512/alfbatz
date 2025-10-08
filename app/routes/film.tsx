@@ -2,10 +2,9 @@ import { useState } from 'react';
 
 export function meta() {
     return [
-      { title: "Top Film and TV Music Composer | Best Movie Soundtrack & Film Scores" },
-      { name: "description", content: "Looking for a skilled film music composer? Get professional music composition for films, TV, and soundtracks. Expert in orchestral scores and movie music production" },
-      { name: "keywords", content: "best film music composers, music composition for films, best film score composers, best movie soundtrack composers, top movie music composers, tv music composer, music production for film, movie score composers, orchestral music for films, best movie soundtrack composers, film soundtrack composers" },
-    ];
+      { title: "Top Film and TV Music Composer | Best Movie Soundtrack | Alfbatz" },
+      { name: "description", content: "Alfbatz—one of the best film music composers. Expert film score composer creating the best movie soundtracks for Film & TV. Hire great movie music composers today!" },
+      { name: "keywords", content: "film score composer,great movie composers,best movie composers,best movie score composers,best composers for movies,best film music composers,best movie music composers,great film music composers,best film soundtracks,Film & TV Music Composition" },];
   }
 
 
